@@ -11,7 +11,7 @@ const server = http.createServer(app); // HTTP server from app
 // Create Socket.IO instance
 const io = new Server(server, {
     cors: {
-        origin: 'https://chatter-frontend-chi.vercel.app',
+        origin: 'http://localhost:5173',
         methods: ['GET', 'POST'],
         credentials: true
     }
