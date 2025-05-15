@@ -8,7 +8,7 @@ const app = express();
 
 // Apply CORS middleware FIRST - before any routes
 app.use(cors({
-    origin: '*', // Your frontend URL
+    origin: 'https://chatter-frontend-chi.vercel.app', // Your frontend URL
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
