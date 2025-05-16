@@ -8,7 +8,7 @@ const app = express();
 
 // Apply CORS middleware FIRST - before any routes
 app.use(cors({
-    origin: 'http://localhost:5173', // Your frontend URL
+    origin: '*', // Your frontend URL
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
